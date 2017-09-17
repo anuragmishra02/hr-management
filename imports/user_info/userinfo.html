@@ -1,0 +1,238 @@
+<template name="userinfo">
+	<div class="loader"></div>
+	<div class="wrapper">
+		<div class="bodycontent">
+			<div class="leftnavigation">
+				<div class="logo">
+					<a href="#"><img src="dummy-logo.png" width="180"></a>
+				</div>
+				<div class="user-profile">
+					<div class="user-pro-body">
+						<div><img src="varun.jpg" alt="user-img" class="img-circle"></div>
+						<div class="profile-dropdown">
+							<a href="javascript:void(0);" class="profile-name-txt">Steave Gection <span class="fa fa-caret-down"></span></a>
+							<ul class="dropdown-menu animated flipInY">
+								<li><a href="#"><i class="fa fati-user"></i> My Profile</a></li>
+								<li><a href="#"><i class="fa fati-settings"></i> Account Setting</a></li>
+								<li><a href="index.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rightContent">
+				<div class="right-header">
+					<div class="right-leftnav">
+						<ul>
+							<li>
+								<a href="javascrip:void(0);">Home</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="right-nav">
+						<ul>
+
+							<li>
+								<a href="#" class="notification-bell">
+									<i class="fa fa-bell" aria-hidden="true"></i>
+									<span>6</span>
+								</a>
+							</li>
+							<li>
+								<a href="index.html">
+									<i class="fa fa-sign-out" aria-hidden="true"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="right-bodycontent">
+					<div class="page-heading withSearch">
+						<h1>Enter Candidate Details</h1>
+						<div class="selectSearch">
+							Search
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="page-data-cntr">
+						<div class="expoter-cntr">
+							<div class="form-layout form-material grid-layout">
+								<div class="form-row">
+									<div class="grid-6">
+										<div class="form-field">
+											<div class="input-group">
+												<input class="form-control" placeholder="First Name" type="text" id="fname">
+											</div>
+										</div>
+									</div>
+									<div class="grid-6">
+										<div class="form-field">
+											<div class="input-group">
+												<input class="form-control" placeholder="Last Name" type="text" id="lname">
+											</div>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="form-row">
+									<div class="grid-6">
+										<div class="form-field">
+											<div class="input-group">
+												<input class="form-control" id="datepicker" placeholder="Date of Birth" type="text">
+											</div>
+										</div>
+									</div>
+									<div class="grid-6">
+										<div class="form-field">
+											<div class="input-group">
+												<input class="form-control" placeholder="PAN Number" type="text" id="panNumber">
+
+											</div>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="form-row">
+									<div class="grid-6">
+										<div class="form-field">
+											<div class="input-group">
+												<div class="input-type-upload">
+													<input class="uplogingitem" type="file" name="rfile" id="rfile">
+													<span class="custom-upload" for="file">
+											Upload
+										</span>
+													<div class="upload-file-path">
+														Resume
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="grid-6">
+										<div class="form-field">
+											<div class="input-group">
+												<div class="input-type-upload">
+													<input class="uplogingitem" type="file" name="sscfile" id="sscfile">
+													<span class="custom-upload" for="file">
+											Upload
+										</span>
+													<div class="upload-file-path">
+														SSC
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="form-row">
+									<div class="grid-6">
+										<div class="form-field">
+											<div class="input-group">
+												<div class="input-type-upload">
+													<input class="uplogingitem" type="file" name="degreefile" id="degreefile">
+													<span class="custom-upload" for="file">
+											Upload
+										</span>
+													<div class="upload-file-path">
+														Degree
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="grid-6">
+										<div class="form-field">
+											<div class="input-group">
+												<div class="fancy-radio inline-list">
+													<ul>
+														<li>
+															<input type="radio" id="maler" name="group1" class="with-gap">
+															<label for="maler">Male</label>
+														</li>
+														<li>
+															<input type="radio" id="femaler" name="group1" class="with-gap">
+															<label for="femaler">Female</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+
+								<div class="form-row">
+									<div class="form-field">
+										<div class="input-group text-center">
+											<div class="btn-cntr"><input type="submit" value="Submit" id="submitUserInfo"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+				2017 © Barclay's
+			</div>
+		</div>
+	</div>
+	<div class="overlay footerwhite" id="searchBoxID" data-animation-in="fadeInDown" data-animation-out="fadeOutUp">
+		<div class="overlay-box" style="width:450px">
+			<div class="content">
+				<div class="overlay-header">
+					Search Candidate
+				</div>
+				<div class="overlay-content text-center">
+					<div class="form-layout form-material">
+						<div class="form-row">
+							<div class="form-field">
+								<div class="input-group">
+									<input class="form-control" id="pan" placeholder="Enter Candidate PAN Number" type="text">
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-field">
+								<div class="input-group text-center">
+									<div class="btn-cntr"><input type="submit" value="Search" id="search"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="searchGrid">
+						<ul class="list bullet">
+							<!--<li>
+								<a href="javascript:void(0);">Tushar Khairnar <span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">Tushar Khairnar</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">Tushar Khairnar</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">Tushar Khairnar </a>
+							</li>
+							<a id='resume' href="Passport" target="_blank">Passport</a>-->
+
+							 <div id="userDet"></div>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
